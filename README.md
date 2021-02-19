@@ -1,6 +1,5 @@
 # esp32-smarthome-androidstudio
 
-ESP32 Smart Home with Android Studio Integration <br>
 What do you do when something you want doesn't exist? You make your own! <br>
 This repository is for the ESP32/ESP8266 lines of wifi-capable microcontrollers and utilizes the "simpleWifiSketch" and uses the HTTP-GET from android studio to send a request to the ESP, thus, triggering a relay,led,etc.
 Arduino Requirements <br>
