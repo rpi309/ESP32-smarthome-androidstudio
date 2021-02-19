@@ -1,26 +1,27 @@
 # esp32-smarthome-androidstudio
 
 What do you do when something you want doesn't exist? You make your own! <br>
+ <br>
 This repository is for the ESP32/ESP8266 lines of wifi-capable microcontrollers and utilizes the "simpleWifiSketch" and uses the HTTP-GET from android studio to send a request to the ESP, thus, triggering a relay,led,etc.
+ <br>
 Arduino Requirements <br>
 	•	Arduino IDE download here <br>
 	•	A ESP Board <br> 
 	•	USB -> Serial Converter (FTDI) ONLY NEEDED IF USING ESP 01S and CAM) <br>
 	•	Any device you wanted to turn on (relay, led, etc) <br>
 
-
+ <br>
 Android Studio Requirements <br>
 	•	Computer with an Intel CPU or Any Computer with Physical Device (afaik Android Studio doesn't support emulation on ARM based processors) <br>
 	•	API level >26 <br>
 	•	greater than 8GB ram (pretty ram intensive, during testing, android studio was using 6GB ram) <br>
-
+ <br>
 System tested on <br>
 	•	Late 2021 ARM M1 Mac Mini 16GB <br>
 	•	Physical Pixel 3 Device <br>
 	•	Doit ESP32 DEVKIT v1 <br>
 	•	Optional Relay (300watt, 10amps@110v) <br>
-
-
+ <br>
 Installation Directions (Android) <br>
 	•	Open Android Studio <br>
 	•	Start new Basic Project <br>
@@ -37,7 +38,7 @@ Installation Directions (Android) <br>
 	•	line 58: val lowURL = URL("http://urIP/L") <br>
 	•	line 118 val url = URL("http://urIP/".plus(path)) <br>
 	•	For example, if the IP of the arduino is 192.168.86.35, then for line 34, it would be: "val statusURl = URL("http://192.168.86.35/S") <br>
-
+ <br>
 Installation Directions (Arduino) <br>
 	•	Download the "arduinoBuild_v1.0.zip" <br> 
 	•	Unzip the file using your preferred method <br>
@@ -54,4 +55,5 @@ Installation Directions (Arduino) <br>
 	•	Select the port via Tools -> Port -> windows is COM(watever) or mac is /dev/cu.devmodem(watever)v
 	•	Change the SSID, PSK, and the OUTPUT PIN to suite your needs <br>
 	•	Upload Code (you may or may not need to hold the "boot" button on esp or connect GPIO 0 to Ground(esp-01s) when uploading) <br>
+ <br>
 Happy ESPing!  <br>
